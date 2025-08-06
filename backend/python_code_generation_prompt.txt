@@ -1,0 +1,152 @@
+Generate Python code to create a {chart_type} using {library}.
+
+Data available as 'data' variable: {raw_query_results}
+Library: {library}
+Chart Type: {chart_type}
+User Request: {user_request}
+
+CRITICAL INSTRUCTIONS:
+1. ALWAYS inspect the data structure first to understand the available keys
+2. The 'data' variable contains a list of dictionaries from BigQuery results
+3. Column names may vary - don't assume specific key names like 'drug' or 'prescription_count'
+4. Use print() statements to debug if needed
+5. Handle cases where expected keys don't exist
+
+CRITICAL: The following libraries are PRE-IMPORTED and ready to use:
+- plt (matplotlib.pyplot)
+- sns (seaborn)
+- go (plotly.graph_objects) 
+- px (plotly.express)
+- base64, io, json, np (numpy), pd (pandas)
+
+ABSOLUTELY NO IMPORT STATEMENTS ALLOWED. Start directly with data processing.
+
+Requirements:
+1. Use the 'data' variable which contains the query results
+2. Create a {chart_type} chart using {library}
+3. Return result in the specified format for each library
+
+MANDATORY FIRST STEP - Always start with data inspection:
+```python
+# Debug: Inspect data structure
+print("Data inspection:")
+print(f"Data type: {{type(data)}}")
+if data and len(data) > 0:
+    print(f"Number of rows: {{len(data)}}")
+    print(f"Available columns: {{list(data[0].keys())}}")
+    print(f"First row sample: {{data[0]}}")
+else:
+    print("No data available")
+```
+
+For matplotlib/seaborn:
+- Use plt, sns directly (NO imports)
+- For simple plots: use plt.figure(figsize=(12,8)) then plt.bar(), plt.plot(), etc.
+- For subplots: use fig = plt.figure(figsize=(12,8)); ax = fig.add_subplot(111)
+- NEVER use fig, ax = plt.figure(), plt.gca() - this is incorrect syntax
+- Create the chart
+- Convert to base64 image
+- Set result = {{"graphType": "image", "src": "data:image/png;base64,<base64_string>", "alt": "Chart description"}}
+
+For plotly:
+- Use go, px directly (NO imports) 
+- For simple charts: prefer go.Figure() with go.Bar(), go.Scatter(), etc.
+- For px charts: convert data to DataFrame first: df = pd.DataFrame(data)
+- Create the chart using plotly
+- Use plotly_to_dict(fig) helper function that's already available
+- Set result = {{"graphType": "plotly", "data": plot_data["data"], "layout": plot_data["layout"]}}
+
+Return ONLY executable Python code with NO import statements.
+The code should end with a 'result' variable containing the chart data.
+
+Example for matplotlib with data inspection:
+```python
+# Debug: Inspect data structure
+print("Data inspection:")
+if data and len(data) > 0:
+    print(f"Available columns: {{list(data[0].keys())}}")
+    print(f"First row: {{data[0]}}")
+
+# Process the data - adapt to actual column names
+# Assuming the data has columns for categories and values
+if data and len(data) > 0:
+    # Get the actual column names
+    columns = list(data[0].keys())
+    
+    # Try to identify category and value columns
+    category_col = columns[0]  # First column as category
+    value_col = columns[1] if len(columns) > 1 else columns[0]  # Second column as value
+    
+    labels = [str(item[category_col]) for item in data]
+    values = [float(item[value_col]) if isinstance(item[value_col], (int, float)) else 1 for item in data]
+    
+    # Create the chart
+    plt.figure(figsize=(12, 8))
+    plt.bar(labels, values)
+    plt.title('Data Visualization')
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    
+    # Convert to base64
+    buffer = io.BytesIO()
+    plt.savefig(buffer, format='png', dpi=300, bbox_inches='tight')
+    buffer.seek(0)
+    image_base64 = base64.b64encode(buffer.read()).decode()
+    plt.close()
+    
+    result = {{
+        "graphType": "image",
+        "src": f"data:image/png;base64,{{image_base64}}",
+        "alt": "Bar chart visualization"
+    }}
+else:
+    # No data fallback
+    result = {{
+        "graphType": "image",
+        "src": "data:image/png;base64,",
+        "alt": "No data available"
+    }}
+```
+
+Example for plotly with data inspection:
+```python
+# Debug: Inspect data structure
+print("Data inspection:")
+if data and len(data) > 0:
+    print(f"Available columns: {{list(data[0].keys())}}")
+    print(f"First row: {{data[0]}}")
+
+# Process the data - adapt to actual column names
+if data and len(data) > 0:
+    # Get the actual column names
+    columns = list(data[0].keys())
+    
+    # Try to identify category and value columns
+    category_col = columns[0]  # First column as category
+    value_col = columns[1] if len(columns) > 1 else columns[0]  # Second column as value
+    
+    categories = [str(item[category_col]) for item in data]
+    values = [float(item[value_col]) if isinstance(item[value_col], (int, float)) else 1 for item in data]
+    
+    # Create plotly chart using graph_objects
+    fig = go.Figure()
+    fig.add_trace(go.Bar(x=categories, y=values))
+    fig.update_layout(title='Data Visualization')
+    
+    # Convert to JSON-serializable format
+    plot_data = plotly_to_dict(fig)
+    result = {{
+        "graphType": "plotly",
+        "data": plot_data["data"],
+        "layout": plot_data["layout"]
+    }}
+else:
+    # No data fallback
+    result = {{
+        "graphType": "plotly",
+        "data": [],
+        "layout": {{"title": "No data available"}}
+    }}
+```
+
+Remember: ALWAYS start with data inspection and adapt to the actual column names!

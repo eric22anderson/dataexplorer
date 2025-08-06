@@ -1,0 +1,621 @@
+{
+  "caregiver": {
+    "columns": [
+      {
+        "name": "caregiver_id",
+        "type": "INTEGER",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 17984
+  },
+  "chartevents": {
+    "columns": [
+      {
+        "name": "subject_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "hadm_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "stay_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "caregiver_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "charttime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "storetime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "itemid",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "value",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "valuenum",
+        "type": "FLOAT",
+        "description": "No description"
+      },
+      {
+        "name": "valueuom",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "warning",
+        "type": "INTEGER",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 432997491
+  },
+  "d_items": {
+    "columns": [
+      {
+        "name": "itemid",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "label",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "abbreviation",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "linksto",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "category",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "unitname",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "param_type",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "lownormalvalue",
+        "type": "FLOAT",
+        "description": "No description"
+      },
+      {
+        "name": "highnormalvalue",
+        "type": "FLOAT",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 4095
+  },
+  "datetimeevents": {
+    "columns": [
+      {
+        "name": "subject_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "hadm_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "stay_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "caregiver_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "charttime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "storetime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "itemid",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "value",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "valueuom",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "warning",
+        "type": "INTEGER",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 9979761
+  },
+  "icustays": {
+    "columns": [
+      {
+        "name": "subject_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "hadm_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "stay_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "first_careunit",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "last_careunit",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "intime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "outtime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "los",
+        "type": "FLOAT",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 94458
+  },
+  "ingredientevents": {
+    "columns": [
+      {
+        "name": "subject_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "hadm_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "stay_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "caregiver_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "starttime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "endtime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "storetime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "itemid",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "amount",
+        "type": "FLOAT",
+        "description": "No description"
+      },
+      {
+        "name": "amountuom",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "rate",
+        "type": "FLOAT",
+        "description": "No description"
+      },
+      {
+        "name": "rateuom",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "orderid",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "linkorderid",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "statusdescription",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "originalamount",
+        "type": "FLOAT",
+        "description": "No description"
+      },
+      {
+        "name": "originalrate",
+        "type": "FLOAT",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 14253480
+  },
+  "inputevents": {
+    "columns": [
+      {
+        "name": "subject_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "hadm_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "stay_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "caregiver_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "starttime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "endtime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "storetime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "itemid",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "amount",
+        "type": "FLOAT",
+        "description": "No description"
+      },
+      {
+        "name": "amountuom",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "rate",
+        "type": "FLOAT",
+        "description": "No description"
+      },
+      {
+        "name": "rateuom",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "orderid",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "linkorderid",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "ordercategoryname",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "secondaryordercategoryname",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "ordercomponenttypedescription",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "ordercategorydescription",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "patientweight",
+        "type": "FLOAT",
+        "description": "No description"
+      },
+      {
+        "name": "totalamount",
+        "type": "FLOAT",
+        "description": "No description"
+      },
+      {
+        "name": "totalamountuom",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "isopenbag",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "continueinnextdept",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "statusdescription",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "originalamount",
+        "type": "FLOAT",
+        "description": "No description"
+      },
+      {
+        "name": "originalrate",
+        "type": "FLOAT",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 10953713
+  },
+  "outputevents": {
+    "columns": [
+      {
+        "name": "subject_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "hadm_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "stay_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "caregiver_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "charttime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "storetime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "itemid",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "value",
+        "type": "FLOAT",
+        "description": "No description"
+      },
+      {
+        "name": "valueuom",
+        "type": "STRING",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 5359395
+  },
+  "procedureevents": {
+    "columns": [
+      {
+        "name": "subject_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "hadm_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "stay_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "caregiver_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "starttime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "endtime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "storetime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "itemid",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "value",
+        "type": "FLOAT",
+        "description": "No description"
+      },
+      {
+        "name": "valueuom",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "location",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "locationcategory",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "orderid",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "linkorderid",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "ordercategoryname",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "ordercategorydescription",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "patientweight",
+        "type": "FLOAT",
+        "description": "No description"
+      },
+      {
+        "name": "isopenbag",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "continueinnextdept",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "statusdescription",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "ORIGINALAMOUNT",
+        "type": "FLOAT",
+        "description": "No description"
+      },
+      {
+        "name": "ORIGINALRATE",
+        "type": "FLOAT",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 808706
+  }
+}

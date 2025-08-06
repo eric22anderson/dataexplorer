@@ -1,0 +1,1279 @@
+{
+  "admissions": {
+    "columns": [
+      {
+        "name": "subject_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "hadm_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "admittime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "dischtime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "deathtime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "admission_type",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "admit_provider_id",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "admission_location",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "discharge_location",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "insurance",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "language",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "marital_status",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "race",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "edregtime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "edouttime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "hospital_expire_flag",
+        "type": "INTEGER",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 546028
+  },
+  "d_hcpcs": {
+    "columns": [
+      {
+        "name": "code",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "category",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "long_description",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "short_description",
+        "type": "STRING",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 89208
+  },
+  "d_icd_diagnoses": {
+    "columns": [
+      {
+        "name": "icd_code",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "icd_version",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "long_title",
+        "type": "STRING",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 112107
+  },
+  "d_icd_procedures": {
+    "columns": [
+      {
+        "name": "icd_code",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "icd_version",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "long_title",
+        "type": "STRING",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 86423
+  },
+  "d_labitems": {
+    "columns": [
+      {
+        "name": "itemid",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "label",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "fluid",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "category",
+        "type": "STRING",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 1650
+  },
+  "diagnoses_icd": {
+    "columns": [
+      {
+        "name": "subject_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "hadm_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "seq_num",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "icd_code",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "icd_version",
+        "type": "INTEGER",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 6364488
+  },
+  "drgcodes": {
+    "columns": [
+      {
+        "name": "subject_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "hadm_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "drg_type",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "drg_code",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "description",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "drg_severity",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "drg_mortality",
+        "type": "INTEGER",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 761856
+  },
+  "emar": {
+    "columns": [
+      {
+        "name": "subject_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "hadm_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "emar_id",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "emar_seq",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "poe_id",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "pharmacy_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "enter_provider_id",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "charttime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "medication",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "event_txt",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "scheduletime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "storetime",
+        "type": "DATETIME",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 42808593
+  },
+  "emar_detail": {
+    "columns": [
+      {
+        "name": "subject_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "emar_id",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "emar_seq",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "parent_field_ordinal",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "administration_type",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "pharmacy_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "barcode_type",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "reason_for_no_barcode",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "complete_dose_not_given",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "dose_due",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "dose_due_unit",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "dose_given",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "dose_given_unit",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "will_remainder_of_dose_be_given",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "product_amount_given",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "product_unit",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "product_code",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "product_description",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "product_description_other",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "prior_infusion_rate",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "infusion_rate",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "infusion_rate_adjustment",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "infusion_rate_adjustment_amount",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "infusion_rate_unit",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "route",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "infusion_complete",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "completion_interval",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "new_iv_bag_hung",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "continued_infusion_in_other_location",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "restart_interval",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "side",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "site",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "non_formulary_visual_verification",
+        "type": "STRING",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 87371064
+  },
+  "hcpcsevents": {
+    "columns": [
+      {
+        "name": "subject_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "hadm_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "chartdate",
+        "type": "DATE",
+        "description": "No description"
+      },
+      {
+        "name": "hcpcs_cd",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "seq_num",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "short_description",
+        "type": "STRING",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 186074
+  },
+  "labevents": {
+    "columns": [
+      {
+        "name": "labevent_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "subject_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "hadm_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "specimen_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "itemid",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "order_provider_id",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "charttime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "storetime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "value",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "valuenum",
+        "type": "FLOAT",
+        "description": "No description"
+      },
+      {
+        "name": "valueuom",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "ref_range_lower",
+        "type": "FLOAT",
+        "description": "No description"
+      },
+      {
+        "name": "ref_range_upper",
+        "type": "FLOAT",
+        "description": "No description"
+      },
+      {
+        "name": "flag",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "priority",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "comments",
+        "type": "STRING",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 158374764
+  },
+  "microbiologyevents": {
+    "columns": [
+      {
+        "name": "microevent_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "subject_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "hadm_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "micro_specimen_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "order_provider_id",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "chartdate",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "charttime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "spec_itemid",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "spec_type_desc",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "test_seq",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "storedate",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "storetime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "test_itemid",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "test_name",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "org_itemid",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "org_name",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "isolate_num",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "quantity",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "ab_itemid",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "ab_name",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "dilution_text",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "dilution_comparison",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "dilution_value",
+        "type": "FLOAT",
+        "description": "No description"
+      },
+      {
+        "name": "interpretation",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "comments",
+        "type": "STRING",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 3988224
+  },
+  "omr": {
+    "columns": [
+      {
+        "name": "subject_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "chartdate",
+        "type": "DATE",
+        "description": "No description"
+      },
+      {
+        "name": "seq_num",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "result_name",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "result_value",
+        "type": "STRING",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 7753027
+  },
+  "patients": {
+    "columns": [
+      {
+        "name": "subject_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "gender",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "anchor_age",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "anchor_year",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "anchor_year_group",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "dod",
+        "type": "DATE",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 364627
+  },
+  "pharmacy": {
+    "columns": [
+      {
+        "name": "subject_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "hadm_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "pharmacy_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "poe_id",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "starttime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "stoptime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "medication",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "proc_type",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "status",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "entertime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "verifiedtime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "route",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "frequency",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "disp_sched",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "infusion_type",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "sliding_scale",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "lockout_interval",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "basal_rate",
+        "type": "FLOAT",
+        "description": "No description"
+      },
+      {
+        "name": "one_hr_max",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "doses_per_24_hrs",
+        "type": "FLOAT",
+        "description": "No description"
+      },
+      {
+        "name": "duration",
+        "type": "FLOAT",
+        "description": "No description"
+      },
+      {
+        "name": "duration_interval",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "expiration_value",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "expiration_unit",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "expirationdate",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "dispensation",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "fill_quantity",
+        "type": "STRING",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 17847567
+  },
+  "poe": {
+    "columns": [
+      {
+        "name": "poe_id",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "poe_seq",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "subject_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "hadm_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "ordertime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "order_type",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "order_subtype",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "transaction_type",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "discontinue_of_poe_id",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "discontinued_by_poe_id",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "order_provider_id",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "order_status",
+        "type": "STRING",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 52212109
+  },
+  "poe_detail": {
+    "columns": [
+      {
+        "name": "poe_id",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "poe_seq",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "subject_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "field_name",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "field_value",
+        "type": "STRING",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 8504982
+  },
+  "prescriptions": {
+    "columns": [
+      {
+        "name": "subject_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "hadm_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "pharmacy_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "poe_id",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "poe_seq",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "order_provider_id",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "starttime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "stoptime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "drug_type",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "drug",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "formulary_drug_cd",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "gsn",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "ndc",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "prod_strength",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "form_rx",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "dose_val_rx",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "dose_unit_rx",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "form_val_disp",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "form_unit_disp",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "doses_per_24_hrs",
+        "type": "FLOAT",
+        "description": "No description"
+      },
+      {
+        "name": "route",
+        "type": "STRING",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 20292611
+  },
+  "procedures_icd": {
+    "columns": [
+      {
+        "name": "subject_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "hadm_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "seq_num",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "chartdate",
+        "type": "DATE",
+        "description": "No description"
+      },
+      {
+        "name": "icd_code",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "icd_version",
+        "type": "INTEGER",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 859655
+  },
+  "provider": {
+    "columns": [
+      {
+        "name": "provider_id",
+        "type": "STRING",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 42244
+  },
+  "services": {
+    "columns": [
+      {
+        "name": "subject_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "hadm_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "transfertime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "prev_service",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "curr_service",
+        "type": "STRING",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 593071
+  },
+  "transfers": {
+    "columns": [
+      {
+        "name": "subject_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "hadm_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "transfer_id",
+        "type": "INTEGER",
+        "description": "No description"
+      },
+      {
+        "name": "eventtype",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "careunit",
+        "type": "STRING",
+        "description": "No description"
+      },
+      {
+        "name": "intime",
+        "type": "DATETIME",
+        "description": "No description"
+      },
+      {
+        "name": "outtime",
+        "type": "DATETIME",
+        "description": "No description"
+      }
+    ],
+    "description": "No description",
+    "num_rows": 2413581
+  }
+}
