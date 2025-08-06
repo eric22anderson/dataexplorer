@@ -1,6 +1,6 @@
-# React Login & Chat Application
+# AI In Healthcare High Risk Project
 
-A modern React application with authentication and chat functionality built with Vite, React Router, and Axios.
+React based application with authentication and chat functionality built to provide a chat based interfact that analyzes back-end medical data and provides dynamic charting. 
 
 ## Features
 
@@ -31,55 +31,6 @@ src/
 ## API Endpoints
 
 The application expects the following API endpoints:
-
-### POST /api/login
-**Request:**
-```json
-{
-  "username": "string",
-  "password": "string"
-}
-```
-
-**Response (Success):**
-```json
-{
-  "token": "jwt_token_here",
-  "user": {
-    "id": "user_id",
-    "username": "username"
-  }
-}
-```
-
-**Response (Error):**
-```json
-{
-  "message": "Invalid credentials"
-}
-```
-
-### POST /api/chat
-**Request:**
-```json
-{
-  "message": "user message here"
-}
-```
-
-**Response:**
-```json
-{
-  "response": "bot response here"
-}
-```
-
-**Headers:**
-```
-Authorization: Bearer <token>
-```
-
-## Getting Started
 
 1. **Install Dependencies:**
    ```bash
