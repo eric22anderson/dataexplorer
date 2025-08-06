@@ -1,0 +1,50 @@
+1. Simple Bar Chart (Basic)
+Query: "Show me the top 10 most prescribed medications"
+Expected: Basic bar chart with drug names and prescription counts
+Chart Type: Matplotlib/Plotly bar chart
+Complexity: ⭐
+2. Pie Chart (Basic)
+Query: "Create a pie chart of patient admissions by gender"
+Expected: Pie chart showing male/female distribution
+Chart Type: Matplotlib/Plotly pie chart
+Complexity: ⭐
+3. Horizontal Bar Chart (Basic-Intermediate)
+Query: "Show me the top 15 most common diagnoses as a horizontal bar chart using matplotlib"
+Expected: Horizontal bar chart with diagnosis names and frequencies
+Chart Type: Matplotlib horizontal bar
+Complexity: ⭐⭐
+4. Line Chart with Time Series (Intermediate)
+Query: "Plot the number of daily admissions over the last 6 months as a line chart"
+Expected: Time series line chart showing admission trends
+Chart Type: Plotly line chart with dates
+Complexity: ⭐⭐⭐
+5. Histogram Distribution (Intermediate)
+Query: "Create a histogram showing the distribution of patient ages at admission"
+Expected: Histogram with age bins and frequency counts
+Chart Type: Matplotlib/Plotly histogram
+Complexity: ⭐⭐⭐
+6. Grouped Bar Chart (Intermediate-Advanced)
+Query: "Compare ICU vs non-ICU admission rates by age group (18-30, 31-50, 51-70, 70+)"
+Expected: Grouped bar chart comparing two categories across age groups
+Chart Type: Plotly grouped bar chart
+Complexity: ⭐⭐⭐⭐
+7. Scatter Plot Correlation (Advanced)
+Query: "Create a scatter plot showing the relationship between patient age and length of stay, colored by admission type"
+Expected: Scatter plot with age on x-axis, LOS on y-axis, colored points
+Chart Type: Plotly scatter with color mapping
+Complexity: ⭐⭐⭐⭐
+8. Heatmap (Advanced)
+Query: "Generate a heatmap showing admission patterns by day of week and hour of day"
+Expected: 2D heatmap with days as rows, hours as columns, admission counts as colors
+Chart Type: Plotly/Matplotlib heatmap
+Complexity: ⭐⭐⭐⭐⭐
+9. Box Plot for Outlier Detection (Advanced)
+Query: "Show me box plots of medication dosages by age group to identify outliers"
+Expected: Multiple box plots showing dosage distributions with outliers
+Chart Type: Plotly/Matplotlib box plots
+Complexity: ⭐⭐⭐⭐⭐
+10. Multi-Series Time Chart (Very Advanced)
+Query: "Create a multi-line chart showing monthly trends for emergency vs elective admissions, ICU mortality rates, and average length of stay over the past 2 years"
+Expected: Complex chart with multiple y-axes, different metrics, legend
+Chart Type: Plotly multi-trace with secondary y-axis
+Complexity:
